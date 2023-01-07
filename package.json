@@ -4,10 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtgober/poke-api.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtgober/poke-api/issues"
+  },
+  "homepage": "https://github.com/jtgober/poke-api#readme",
   "devDependencies": {
-    "@playwright/test": "^1.17.2"
+    "@playwright/test": "^1.29.2"
   }
 }
