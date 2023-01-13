@@ -17,5 +17,9 @@
   "homepage": "https://github.com/jtgober/poke-api#readme",
   "devDependencies": {
     "@playwright/test": "^1.29.2"
+  },
+  "dependencies": {
+    "easy-json-schema": "^0.0.2-beta",
+    "generate-schema": "^2.6.0"
   }
 }

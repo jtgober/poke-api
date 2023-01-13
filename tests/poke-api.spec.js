@@ -1,9 +1,8 @@
 
-const { test } = require('@playwright/test');
+const { test, expect } = require('@playwright/test');
 
 test('Pokemon information', async ({ request }) => {
     const pokemon = await request.get(`pokemon/squirtle`);
-    let pokejson = await pokemon.json() 
-    console.log(await pokejson.moves[12].move.name);
-
+    const pokejson = await pokemon.json()
+    expect(JSON.stringify(pokejson)).toMatchSnapshot()
 });
