@@ -8,9 +8,10 @@ test('Whats Your Starter Pokemon?!?!?', async ({ request }) => {
     // request to grab specific pokemon 
     const pokemon = await request.get(`pokemon-species/${randomStarterPokemon}`);
     let myStarterPokemon = await pokemon.json()
-    let pokeName = myStarterPokemon.name
-    let generation = myStarterPokemon.generation.name
+    console.log(myStarterPokemon);
+    // let pokeName = myStarterPokemon.name
+    // let generation = myStarterPokemon.generation.name
 
 
-    console.log(`You received a ${generation} ${pokeName} from Gojo!`);
+    // console.log(`You received a ${generation} ${pokeName} from Gojo!`);
 });

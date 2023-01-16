@@ -1,0 +1,456 @@
+{
+  "type": "object",
+  "required": [],
+  "properties": {
+    "abilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "ability": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "name": { "type": "string" },
+              "url": { "type": "string" }
+            }
+          },
+          "is_hidden": { "type": "string" },
+          "slot": { "type": "number" }
+        }
+      }
+    },
+    "base_experience": { "type": "number" },
+    "forms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string" }
+        }
+      }
+    },
+    "game_indices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "game_index": { "type": "number" },
+          "version": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "name": { "type": "string" },
+              "url": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "height": { "type": "number" },
+    "held_items": { "type": "array", "items": { "type": "string" } },
+    "id": { "type": "number" },
+    "is_default": { "type": "boolean" },
+    "location_area_encounters": { "type": "string" },
+    "moves": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "move": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "name": { "type": "string" },
+              "url": { "type": "string" }
+            }
+          },
+          "version_group_details": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "level_learned_at": { "type": "string" },
+                "move_learn_method": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "name": { "type": "string" },
+                    "url": { "type": "string" }
+                  }
+                },
+                "version_group": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "name": { "type": "string" },
+                    "url": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "name": { "type": "string" },
+    "order": { "type": "number" },
+    "past_types": { "type": "array", "items": { "type": "string" } },
+    "species": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string" }
+      }
+    },
+    "sprites": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "back_default": { "type": "string" },
+        "back_female": { "type": "string" },
+        "back_shiny": { "type": "string" },
+        "back_shiny_female": { "type": "string" },
+        "front_default": { "type": "string" },
+        "front_female": { "type": "string" },
+        "front_shiny": { "type": "string" },
+        "front_shiny_female": { "type": "string" },
+        "other": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "dream_world": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "front_default": { "type": "string" },
+                "front_female": { "type": "string" }
+              }
+            },
+            "home": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "front_default": { "type": "string" },
+                "front_female": { "type": "string" },
+                "front_shiny": { "type": "string" },
+                "front_shiny_female": { "type": "string" }
+              }
+            },
+            "official-artwork": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "front_default": { "type": "string" },
+                "front_shiny": { "type": "string" }
+              }
+            }
+          }
+        },
+        "versions": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "generation-i": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "red-blue": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "back_default": { "type": "string" },
+                    "back_gray": { "type": "string" },
+                    "back_transparent": { "type": "string" },
+                    "front_default": { "type": "string" },
+                    "front_gray": { "type": "string" },
+                    "front_transparent": { "type": "string" }
+                  }
+                },
+                "yellow": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "back_default": { "type": "string" },
+                    "back_gray": { "type": "string" },
+                    "back_transparent": { "type": "string" },
+                    "front_default": { "type": "string" },
+                    "front_gray": { "type": "string" },
+                    "front_transparent": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "generation-ii": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "crystal": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "back_default": { "type": "string" },
+                    "back_shiny": { "type": "string" },
+                    "back_shiny_transparent": { "type": "string" },
+                    "back_transparent": { "type": "string" },
+                    "front_default": { "type": "string" },
+                    "front_shiny": { "type": "string" },
+                    "front_shiny_transparent": { "type": "string" },
+                    "front_transparent": { "type": "string" }
+                  }
+                },
+                "gold": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "back_default": { "type": "string" },
+                    "back_shiny": { "type": "string" },
+                    "front_default": { "type": "string" },
+                    "front_shiny": { "type": "string" },
+                    "front_transparent": { "type": "string" }
+                  }
+                },
+                "silver": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "back_default": { "type": "string" },
+                    "back_shiny": { "type": "string" },
+                    "front_default": { "type": "string" },
+                    "front_shiny": { "type": "string" },
+                    "front_transparent": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "generation-iii": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "emerald": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "front_default": { "type": "string" },
+                    "front_shiny": { "type": "string" }
+                  }
+                },
+                "firered-leafgreen": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "back_default": { "type": "string" },
+                    "back_shiny": { "type": "string" },
+                    "front_default": { "type": "string" },
+                    "front_shiny": { "type": "string" }
+                  }
+                },
+                "ruby-sapphire": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "back_default": { "type": "string" },
+                    "back_shiny": { "type": "string" },
+                    "front_default": { "type": "string" },
+                    "front_shiny": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "generation-iv": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "diamond-pearl": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "back_default": { "type": "string" },
+                    "back_female": { "type": "string" },
+                    "back_shiny": { "type": "string" },
+                    "back_shiny_female": { "type": "string" },
+                    "front_default": { "type": "string" },
+                    "front_female": { "type": "string" },
+                    "front_shiny": { "type": "string" },
+                    "front_shiny_female": { "type": "string" }
+                  }
+                },
+                "heartgold-soulsilver": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "back_default": { "type": "string" },
+                    "back_female": { "type": "string" },
+                    "back_shiny": { "type": "string" },
+                    "back_shiny_female": { "type": "string" },
+                    "front_default": { "type": "string" },
+                    "front_female": { "type": "string" },
+                    "front_shiny": { "type": "string" },
+                    "front_shiny_female": { "type": "string" }
+                  }
+                },
+                "platinum": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "back_default": { "type": "string" },
+                    "back_female": { "type": "string" },
+                    "back_shiny": { "type": "string" },
+                    "back_shiny_female": { "type": "string" },
+                    "front_default": { "type": "string" },
+                    "front_female": { "type": "string" },
+                    "front_shiny": { "type": "string" },
+                    "front_shiny_female": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "generation-v": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "black-white": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "animated": {
+                      "type": "object",
+                      "required": [],
+                      "properties": {
+                        "back_default": { "type": "string" },
+                        "back_female": { "type": "string" },
+                        "back_shiny": { "type": "string" },
+                        "back_shiny_female": { "type": "string" },
+                        "front_default": { "type": "string" },
+                        "front_female": { "type": "string" },
+                        "front_shiny": { "type": "string" },
+                        "front_shiny_female": { "type": "string" }
+                      }
+                    },
+                    "back_default": { "type": "string" },
+                    "back_female": { "type": "string" },
+                    "back_shiny": { "type": "string" },
+                    "back_shiny_female": { "type": "string" },
+                    "front_default": { "type": "string" },
+                    "front_female": { "type": "string" },
+                    "front_shiny": { "type": "string" },
+                    "front_shiny_female": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "generation-vi": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "omegaruby-alphasapphire": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "front_default": { "type": "string" },
+                    "front_female": { "type": "string" },
+                    "front_shiny": { "type": "string" },
+                    "front_shiny_female": { "type": "string" }
+                  }
+                },
+                "x-y": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "front_default": { "type": "string" },
+                    "front_female": { "type": "string" },
+                    "front_shiny": { "type": "string" },
+                    "front_shiny_female": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "generation-vii": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "icons": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "front_default": { "type": "string" },
+                    "front_female": { "type": "string" }
+                  }
+                },
+                "ultra-sun-ultra-moon": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "front_default": { "type": "string" },
+                    "front_female": { "type": "string" },
+                    "front_shiny": { "type": "string" },
+                    "front_shiny_female": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "generation-viii": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "icons": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "front_default": { "type": "string" },
+                    "front_female": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "stats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "base_stat": { "type": "number" },
+          "effort": { "type": "string" },
+          "stat": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "name": { "type": "string" },
+              "url": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "types": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "slot": { "type": "number" },
+          "type": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "name": { "type": "string" },
+              "url": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "weight": { "type": "number" }
+  }
+}
